@@ -66,7 +66,7 @@ def add_open_background(exe_file_path,exe_name):
         command_path,
         '',
         winreg.REG_SZ,
-        '\"' + exe_file_path + "\"" + "  " "\"" + '%1' + "\""
+        '\"' + exe_file_path + "\"" + "  " "\"" + '%V' + "\""
     )
     #设置图标
     set_registry_value(
@@ -74,5 +74,5 @@ def add_open_background(exe_file_path,exe_name):
         regedit_path,
         'Icon',
         winreg.REG_EXPAND_SZ,
-        '\"' + exe_file_path + "\"" + "  " "\"" + '%V' + "\""
+        '\"' + exe_file_path + "\""
     )
